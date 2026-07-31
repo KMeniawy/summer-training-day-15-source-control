@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <ul>
-        <li>omar elbaz</li>
-    </ul>
-    <script src="./main.js"></script>
+
+    <div class="container">
+
+        <form id="loginForm">
+            <h2>Login</h2>
+
+            <input type="text" id="username" placeholder="Enter Your Name">
+
+            <input type="password" id="password" placeholder="Enter Password">
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="loader-box" id="loaderBox">
+            <div class="loader"></div>
+            <p>Loading...</p>
+        </div>
+
+        <div class="message" id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
